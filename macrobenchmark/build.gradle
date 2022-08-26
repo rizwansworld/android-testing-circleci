@@ -34,7 +34,9 @@ android {
         }
     }
 
-    targetProjectPath = ":app" // Note that your module name may be different
+    targetProjectPath = ":app"
+    namespace 'com.circleci.samples.todoapp.macrobenchmark'
+// Note that your module name may be different
     experimentalProperties["android.experimental.self-instrumenting"] = true
 }
 
