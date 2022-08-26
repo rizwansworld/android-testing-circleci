@@ -137,7 +137,6 @@ workflows:
           requires:
             - unit-test
             - android-test-all
-            - benchmarks-emulator
             - benchmarks-ftl
           filters:
             branches:
