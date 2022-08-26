@@ -106,6 +106,10 @@ workflows:
     jobs:
       - unit-test
       - android/run-ui-tests:
+          executor:
+            name: android/android-machine
+            tag: 2022.08.1
+            resource-class: xlarge
           filters:
             branches:
               ignore: main # regular commits
